@@ -3,7 +3,7 @@
 
 	"name": "Codecademy Q&A Forum Fix",
 	"description": "Fixes breadcrumbs in Codecademy Q&A Forums.",
-	"version": "1.0.2",
+	"version": "1.0.3",
 
 	"icons": { 
 		"16": "icon_16.png",

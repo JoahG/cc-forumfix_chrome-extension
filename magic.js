@@ -10,11 +10,7 @@ var forumFix = function(){
 				e.setRequestHeader("Accept", "application/json, text/javascript, */*; q=0.0")
 			},
 			success: function (e) {
-				h = $("div#section #breadcrumb .breadcrumb b a").clone();
-				$("div#section #breadcrumb .breadcrumb b a").remove();
-				t = $("div#section #breadcrumb .breadcrumb b").text().split(" ");
-				t[1] = (parseInt(e.section_index) + 1).toString(10);
-				$("div#section #breadcrumb .breadcrumb b").html(t.slice(0, 4).join(" ") + " (" + (typeof e.humanized_exercise_index !== "undefined" ? "Exercise " + e.humanized_exercise_index.toString(10) : "General Forum") + ")").prepend(h);
+				console.log(e)
 			}
 		})
 	}
